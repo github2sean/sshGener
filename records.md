@@ -22,9 +22,17 @@ npm install --save-dev electron
 如果速度还是很慢就把  package-lock.json 和 node-modules 删掉，重新 install
 
 
-seanlocal branch
+# git 相关内容
+1. 如何查看暂存区中有哪些文件？  
+  git ls-files
+2. 需要查查文件对应的Blob对象  
+  git ls-files -s -- bb.txt 或者直接 git ls-files -s
+3. 通过Blob对象，查询文件里面的内容  
+  git cat-file -p id
+# git fetch & pull详解
+ 1. 先用一张图来理一下git fetch和git pull的概念  
 
-git-plus setting git location
+ ![](http://kmknkk.oss-cn-beijing.aliyuncs.com/image/git.jpg "fetch & pull")
 
-
-sa
+ #### 可以简单的概括为：  
+git fetch是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。而git pull 则是将远程主机的最新内容拉下来后直接合并，即：git pull = git fetch + git merge，这样可能会产生冲突，需要手动解决
