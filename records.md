@@ -20,3 +20,7 @@ electron_mirror=https://npm.taobao.org/mirrors/electron/
 
 npm install --save-dev electron
 如果速度还是很慢就把  package-lock.json 和 node-modules 删掉，重新 install
+
+
+
+测试创建分支 git branch branchName
