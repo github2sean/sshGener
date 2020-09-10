@@ -1,0 +1,22 @@
+{
+  "name": "sshgener",
+  "version": "0.1.0",
+  "description": "a sshkey generator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "sean",
+  "license": "ISC",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "repository": {"type":"git","url":"https://github.com/github2sean/sshGener.git"},
+  "devDependencies": {
+    "electron": "^10.1.1"
+  }
+}
